@@ -15,3 +15,7 @@ module kitchen_bench() {
     translate([2370, -950, 100]) cube([580, 950, 750]);
     translate([2420, -950, 0]) cube([530, 950, 750]);
 }
+
+module knoxhult_cabinet() {
+    cube([1820, 610, 910]);
+}

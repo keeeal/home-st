@@ -83,8 +83,8 @@ module interior_walls() {
     linear_extrude(3140) interior_wall_profile();
     translate([7940, 1350, 0]) rotate([90, 0, 0])
     linear_extrude(1350) interior_wall_profile();
-    translate([8320, 4040, 0]) rotate([90, 0, 90])
-    linear_extrude(4650) interior_wall_profile();
+    translate([11060, 4040, 0]) rotate([90, 0, 90])
+    linear_extrude(1750) interior_wall_profile();
     translate([11110, 6860, 0]) rotate([90, 0, 0])
     linear_extrude(2830) interior_wall_profile();
 }
