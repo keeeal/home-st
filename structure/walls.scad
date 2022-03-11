@@ -4,10 +4,10 @@ module exterior_wall_profile(thickness=240) {
         square([thickness, 60]);
         square([thickness + 20, 50]);
     }
-    difference() {
-        translate([0, 2340]) square([thickness + 60, 60]);
-        translate([thickness + 60, 2340]) circle(50);
-    }
+    // difference() {
+    //     translate([0, 2340]) square([thickness + 60, 60]);
+    //     translate([thickness + 60, 2340]) circle(50);
+    // }
 }
 
 module interior_wall_profile(thickness=100) {
@@ -16,11 +16,11 @@ module interior_wall_profile(thickness=100) {
         translate([-thickness/2, 0]) square([thickness, 60]);
         translate([-thickness/2 - 20, 0]) square([thickness + 40, 50]);
     }
-    difference() {
-        translate([-thickness/2 - 60, 2340]) square([thickness + 120, 60]);
-        translate([-thickness/2 - 60, 2340]) circle(50);
-        translate([ thickness/2 + 60, 2340]) circle(50);
-    }
+    // difference() {
+    //     translate([-thickness/2 - 60, 2340]) square([thickness + 120, 60]);
+    //     translate([-thickness/2 - 60, 2340]) circle(50);
+    //     translate([ thickness/2 + 60, 2340]) circle(50);
+    // }
 }
 
 module exterior_walls() {
