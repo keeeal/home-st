@@ -15,8 +15,6 @@ module interior_2d() {
 
 module interior_walls_2d() {
     translate([6590, 240]) square([100, 2900]);
-    translate([7890, 240]) square([100, 1110]);
-    translate([8320, 3990]) square([4410, 100]);
     translate([1320, 3040]) square([5370, 100]);
     translate([2680, 4030]) square([100, 3190]);
     translate([2680, -590]) square([100, 3630]);
@@ -24,7 +22,6 @@ module interior_walls_2d() {
     translate([1220, 3040]) square([100, 1090]);
     translate([240, 3530]) square([1000, 100]);
     translate([5550, 4030]) square([100, 2600]);
-    translate([11060, 4090]) square([100, 2530]);
 }
 
 module floorplan() {

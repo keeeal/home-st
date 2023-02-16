@@ -31,7 +31,6 @@ structure();
 
 translate([12600, 2080, 0]) rotate([0, 0, 90]) lounge_fire();
 translate([3240, 6600, 0]) rotate([0, 0, 180]) bathroom_toilet();
-translate([8110, 7220, 0]) kitchen_bench();
 translate([4600, 4130, 0]) bathroom_shower();
 translate([3630, 6300, 200]) godmorgon_tall();
 translate([4130, 6130, 200]) godmorgon_vanity();
