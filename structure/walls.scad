@@ -64,19 +64,13 @@ module interior_walls() {
     translate([1270, 4130, 0]) rotate([90, 0, 0])
     linear_extrude(1090) interior_wall_profile();
     translate([1220, 4080, 0]) rotate([90, 0, 90])
-    linear_extrude(1560) interior_wall_profile();
+    linear_extrude(4430) interior_wall_profile();
     translate([1220, 3090, 0]) rotate([90, 0, 90])
     linear_extrude(5470) interior_wall_profile();
     translate([2730, 6860, 0]) rotate([90, 0, 0])
     linear_extrude(2830) interior_wall_profile();
     translate([2730, 3140, 0]) rotate([90, 0, 0])
     linear_extrude(3970) interior_wall_profile();
-    translate([2730, 4960, 0]) rotate([90, 0, 90])
-    linear_extrude(1000) interior_wall_profile();
-    translate([3730, 6860, 0]) rotate([90, 0, 0])
-    linear_extrude(2830) interior_wall_profile();
-    translate([3680, 4080, 0]) rotate([90, 0, 90])
-    linear_extrude(1970) interior_wall_profile();
     translate([5600, 6860, 0]) rotate([90, 0, 0])
     linear_extrude(2830) interior_wall_profile();
     translate([6640, 3140, 0]) rotate([90, 0, 0])
@@ -96,8 +90,7 @@ module doors() {
     translate([3400, 2990, 0]) cube([830, 200, 2050]);
     translate([1820, 2990, 0]) cube([830, 200, 2050]);
     translate([1820, 3980, 0]) cube([830, 200, 2050]);
-    translate([2880, 4860, 0]) cube([730, 200, 2050]);
-    translate([3630, 4150, 0]) cube([200, 730, 2050]);
+    translate([2880, 3980, 0]) cube([730, 200, 2050]);
     translate([6870, -30, 0]) cube([820, 300, 2050]);
     translate([11350, 6590, 0]) cube([820, 300, 2040]);
     translate([13780, 6590, 0]) cube([1270, 300, 1970]);

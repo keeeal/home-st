@@ -20,13 +20,10 @@ module interior_walls_2d() {
     translate([1320, 3040]) square([5370, 100]);
     translate([2680, 4030]) square([100, 3190]);
     translate([2680, -590]) square([100, 3630]);
-    translate([1320, 4030]) square([1460, 100]);
+    translate([1320, 4030]) square([4330, 100]);
     translate([1220, 3040]) square([100, 1090]);
     translate([240, 3530]) square([1000, 100]);
-    translate([3680, 4030]) square([100, 2600]);
-    translate([3680, 4030]) square([1970, 100]);
     translate([5550, 4030]) square([100, 2600]);
-    translate([2780, 4910]) square([900, 100]);
     translate([11060, 4090]) square([100, 2530]);
 }
 
