@@ -1,3 +1,4 @@
+
 module exterior_wall_profile(thickness=240) {
     square([thickness, 2400]);
     hull() {
@@ -84,16 +85,18 @@ module interior_walls() {
 }
 
 module doors() {
-    translate([5870, 6590, 0]) cube([1880, 300, 2300]);
-    translate([12700, 2950, 0]) cube([300, 820, 2020]);
-    translate([11010, 4810, 0]) cube([200, 820, 2050]);
-    translate([3400, 2990, 0]) cube([830, 200, 2050]);
-    translate([1820, 2990, 0]) cube([830, 200, 2050]);
-    translate([1820, 3980, 0]) cube([830, 200, 2050]);
-    translate([2880, 3980, 0]) cube([730, 200, 2050]);
-    translate([6870, -30, 0]) cube([820, 300, 2050]);
-    translate([11350, 6590, 0]) cube([820, 300, 2040]);
-    translate([13780, 6590, 0]) cube([1270, 300, 1970]);
+    translate([0, 0, -1]) {
+        translate([5870, 6590, 0]) cube([1880, 300, 2300]);
+        translate([12700, 2950, 0]) cube([300, 820, 2020]);
+        translate([11010, 4810, 0]) cube([200, 820, 2050]);
+        translate([3400, 2990, 0]) cube([830, 200, 2050]);
+        translate([1820, 2990, 0]) cube([830, 200, 2050]);
+        translate([1820, 3980, 0]) cube([830, 200, 2050]);
+        translate([2880, 3980, 0]) cube([730, 200, 2050]);
+        translate([6870, -30, 0]) cube([820, 300, 2050]);
+        translate([11350, 6590, 0]) cube([820, 300, 2040]);
+        translate([13780, 6590, 0]) cube([1270, 300, 1970]);
+    }
 }
 
 module windows() {

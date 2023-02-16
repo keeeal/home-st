@@ -35,7 +35,6 @@ translate([8110, 7220, 0]) kitchen_bench();
 translate([4600, 4130, 0]) bathroom_shower();
 translate([3630, 6300, 200]) godmorgon_tall();
 translate([4130, 6130, 200]) godmorgon_vanity();
-translate([4500, 6360, 780]) kattevik_sink();
 translate([12980, 3930, 0]) office_desk();
 translate([15810, 5060, 0]) rotate([0, 0, 90]) office_hemnes_bookshelf();
 translate([15810, 4160, 0]) rotate([0, 0, 90]) office_hemnes_bookshelf();

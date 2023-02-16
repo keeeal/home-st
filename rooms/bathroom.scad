@@ -27,7 +27,7 @@ module bathroom_toilet() {
 }
 
 module bathroom_shower() {
-    color([1, 1, 1], .3) cube([10, 1175, 2100]);
+    cube([10, 1175, 2100]);
 }
 
 module godmorgon_tall() {
@@ -36,17 +36,4 @@ module godmorgon_tall() {
 
 module godmorgon_vanity() {
     cube([1200, 470, 580]);
-}
-
-module kattevik_sink() {
-    rotate_extrude() {
-        hull() {
-            square([10, 20]);
-            translate([170, 10]) circle(10);
-        }
-        hull() {
-            translate([170, 10]) circle(10);
-            translate([190, 140]) circle(10);
-        }
-    }
 }
