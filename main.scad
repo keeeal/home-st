@@ -2,6 +2,8 @@
 $fn = 64;
 EPS = 1e-4;
 
+structure_style = "floorplan"; // [floorplan, walls, rafters, roof]
+
 use <utils/2d.scad>;
 
 use <structure/floorplan.scad>;
@@ -15,7 +17,7 @@ use <rooms/lounge.scad>;
 use <rooms/office.scad>;
 use <rooms/server_room.scad>;
 
-module structure() {
+module walls() {
     difference() {
         union() {
             interior_walls();
@@ -26,8 +28,15 @@ module structure() {
     }
 }
 
-// floorplan();
-structure();
+if (structure_style == "floorplan") {
+    floorplan();
+} else if (structure_style == "walls") {
+    walls();
+} else if (structure_style == "rafters") {
+    // rafters();
+} else if (structure_style == "roof") {
+    // roof();
+}
 
 translate([12600, 2080, 0]) rotate([0, 0, 90]) lounge_fire();
 translate([3240, 6600, 0]) rotate([0, 0, 180]) bathroom_toilet();
