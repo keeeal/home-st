@@ -53,3 +53,4 @@ translate([12980, 1600, 0]) rotate([0, 0, -90]) office_tv_stand();
 translate([5700, 4850, 0]) kitchen_table();
 translate([11360, 1440, 0]) lounge_tiles();
 translate([6560, 2000, 0]) rotate([0, 0, 180]) bedroom_bed();
+translate([15850, 3180, 0]) rotate([0, 0, 180]) office_couch();
