@@ -1,3 +1,4 @@
+use <../utils/3d.scad>;
 
 module office_desk() {
     module leg() {
@@ -38,4 +39,22 @@ module office_tv_stand() {
     translate([880, 0, 5]) cube([20, 395, 360]);
     translate([0, 20, 255]) cube([900, 355, 20]);
     translate([0, 20, 5]) cube([900, 5, 360]);
+}
+
+module office_couch() {
+    module leg() cylinder(60, d1=45, d2=75);
+    translate([0, 0, 60]) {
+        translate([0, 0, 0]) filleted_cube([900, 120, 360], r=20);
+        translate([0, 2920, 0]) filleted_cube([1500, 120, 600], r=20);
+        translate([120, 120, 220]) filleted_cube([780, 2120, 140], r=20);
+        translate([120, 2240, 220]) filleted_cube([1380, 680, 140], r=20);
+        translate([0, 120, 0]) filleted_cube([120, 2800, 600], r=20);
+        translate([120, 120, 0]) filleted_cube([780, 2120, 220], r=20);
+        translate([120, 2240, 0]) filleted_cube([1380, 680, 220], r=20);
+    }
+    translate([60, 60, 0]) leg();
+    translate([840, 60, 0]) leg();
+    translate([60, 2980, 0]) leg();
+    translate([1440, 2980, 0]) leg();
+    translate([1440, 2300, 0]) leg();
 }
